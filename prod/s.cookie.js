@@ -56,7 +56,7 @@ Object.implement('removeCookie', function (name, path, domain) {
     if (path === 'undefined') path = '/';
     if (path === 'undefined') domain = false;
 
-    $.setCookie(name, '', {
+    return $.setCookie(name, '', {
         'path': path,
         'domain': domain,
         'duration': -1
